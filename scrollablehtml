@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .scrolling-text-container {
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            border: 1px solid #ccc;
+            background-color: #f5f5f5;
+        }
+
+        .scrolling-text {
+            animation: scroll 10s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="scrolling-text-container">
+        <div class="scrolling-text">
+            <!-- Inserisci qui il testo che desideri far scorrere -->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+    </div>
+</body>
+</html>
